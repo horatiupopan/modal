@@ -5,7 +5,6 @@ const Modal = ({isOpen, children}) => {
     return isOpen && (
         <div className="modal">
             {children}
-            <button ></button>
         </div>
     );
 }
