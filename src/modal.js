@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
 import './modal.css';
 
-const Modal = ({isOpen, children}) => {
+const Modal = ({isOpen, setIsOpen, children}) => {
+
     return isOpen && (
-        <div className="modal">
-            {children}
+        <div className='overlay' onClick={() => setIsOpen(false)}>
+            <div className='modal' onClick={(e) => e.stopPropagation()}>
+                {children}
+            </div>
         </div>
     );
 }

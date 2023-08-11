@@ -3,4 +3,17 @@
     width: 30vh;
     margin: auto;
     margin-top: 30vh;
+    background-color: white;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5);
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+.overlay :not(.modal) {
+    opacity: 0.5;
 }
